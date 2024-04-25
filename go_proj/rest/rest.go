@@ -37,7 +37,7 @@ func GetMessage(w http.ResponseWriter, r *http.Request) {
 
 	id, err := strconv.Atoi(r.URL.Path[len("/messages/"):])
 	if err != nil {
-		http.Error(w, "Invalid message ID", http.StatusBadRequest)
+		http.Error(w, "Invalid message ID maybe baby", http.StatusBadRequest)
 		return
 	}
 
